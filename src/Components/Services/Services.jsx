@@ -4,7 +4,7 @@ import HeartEmoji from '../../img/heartemoji.png';
 import Glasses from '../../img/glasses.png';
 import Humble from '../../img/humble.png';
 import Card from '../Card/Card';
-import Resume from './krishna3.6+yrresume.pdf';
+import Resume from './krishna-mern-3.6+year.pdf';
 import { themeContext } from '../../Context';
 import { motion } from 'framer-motion';
 
