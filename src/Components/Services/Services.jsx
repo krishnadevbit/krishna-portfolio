@@ -1,24 +1,24 @@
-import React, { useContext } from 'react';
-import './Services.css';
-import HeartEmoji from '../../img/heartemoji.png';
-import Glasses from '../../img/glasses.png';
-import Humble from '../../img/humble.png';
-import Card from '../Card/Card';
-import Resume from './krishna-mern-3.6+year.pdf';
-import { themeContext } from '../../Context';
-import { motion } from 'framer-motion';
+import React, { useContext } from "react";
+import "./Services.css";
+import HeartEmoji from "../../img/heartemoji.png";
+import Glasses from "../../img/glasses.png";
+import Humble from "../../img/humble.png";
+import Card from "../Card/Card";
+import Resume from "./kkresume2024.pdf";
+import { themeContext } from "../../Context";
+import { motion } from "framer-motion";
 
 const Services = () => {
-  const transition = { duration: 1, type: 'spring' };
+  const transition = { duration: 1, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
     <div className="services" id="Services">
       <div className="awesome">
-        <span style={{ color: darkMode ? 'white' : '' }}>My Awesome</span>
+        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>Services</span>
         <span
-          style={{ lineHeight: '20px', color: darkMode ? 'white' : 'gray' }}
+          style={{ lineHeight: "20px", color: darkMode ? "white" : "gray" }}
         >
           I have contributed significantly to the development of various
           components within the <br />
@@ -44,50 +44,50 @@ const Services = () => {
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a>
-        <div className="blur s-blur1" style={{ background: '#ABF1FF94' }}></div>
+        <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       <div className="cards">
         <motion.div
-          initial={{ left: '25rem' }}
-          whileInView={{ left: '18rem' }}
+          initial={{ left: "25rem" }}
+          whileInView={{ left: "18rem" }}
           transition={transition}
-          style={{ left: '24rem' }}
+          style={{ left: "24rem" }}
         >
           <Card
             emoji={HeartEmoji}
-            heading={'Tools Used'}
-            detail={'Vs Code, Webstorm, Atom, Postman, MongoDB Compass, GitHub'}
+            heading={"Tools Used"}
+            detail={"Vs Code, Webstorm, Atom, Postman, MongoDB Compass, GitHub"}
           />
         </motion.div>
         <motion.div
-          initial={{ left: '-2rem', top: '8rem' }}
-          whileInView={{ left: '2rem', top: '12rem' }}
+          initial={{ left: "-2rem", top: "8rem" }}
+          whileInView={{ left: "2rem", top: "12rem" }}
           transition={transition}
-          style={{ top: '12rem', left: '-2rem' }}
+          style={{ top: "12rem", left: "-2rem" }}
         >
           <Card
             emoji={Glasses}
-            heading={'Developer'}
-            detail={'Html5, Css3, JavaScript, ReactJs, Redux, TypeScript'}
+            heading={"Developer"}
+            detail={"Html5, Css3, JavaScript, ReactJs, Redux, TypeScript"}
           />
         </motion.div>
         <motion.div
-          initial={{ left: '25rem', top: '19rem' }}
-          whileInView={{ left: '16rem', top: '19rem' }}
+          initial={{ left: "25rem", top: "19rem" }}
+          whileInView={{ left: "16rem", top: "19rem" }}
           transition={transition}
-          style={{ top: '19rem', left: '25rem' }}
+          style={{ top: "19rem", left: "25rem" }}
         >
           <Card
             emoji={Humble}
-            heading={'UI/UX'}
+            heading={"UI/UX"}
             detail={
-              'Wireframing / Prototyping, Interaction Design, Inclusive Design, Basic UI Development'
+              "Wireframing / Prototyping, Interaction Design, Inclusive Design, Basic UI Development"
             }
           />
         </motion.div>
         <div
           className="blur s-blur2"
-          style={{ background: 'var(--purple)' }}
+          style={{ background: "var(--purple)" }}
         ></div>
       </div>
     </div>
